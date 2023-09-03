@@ -1,6 +1,6 @@
-// document.write("hello world");
-// alert("hello");
-// console.log('Hi');
+document.write("hello world");
+alert("hello");
+console.log('Hi');
 
 // Data types - 7 total
 // Primitive - String, Number, Boolean, Null, Undefined, Symbol,
@@ -13,38 +13,38 @@
 // Undefined
 // Symbol(ES6)
 
-// const friends = [
-//   'anika',
-//   'sara',
-//   'oyshi',
-//   'sinthi',
-//   'urmi',
-//   45,
-//   undefined,
-//   null,
-// ];
-// console.log(friends);
-// let bestFriend = friends[0];
-// console.log(bestFriend);
-// friends[8]='sontu';
-// console.log(friends);
+const friends = [
+  'anika',
+  'sara',
+  'oyshi',
+  'sinthi',
+  'urmi',
+  45,
+  undefined,
+  null,
+];
+console.log(friends);
+let bestFriend = friends[0];
+console.log(bestFriend);
+friends[8]='sontu';
+console.log(friends);
 
-// function greet(name){
-//   console.log('Heloo' + name);
-// }
-// greet("ABC");
-// greet("DEF");
-// greet('GHI');
-// console.log(bru);
+function greet(name){
+  console.log('Heloo' + name);
+}
+greet("ABC");
+greet("DEF");
+greet('GHI');
+console.log(bru);
 
-// const wallHeight = 80;
-// function calculate(value){
-//   return value*2.54;
-// }
-// const width = calculate(100);
-// const height = calculate(wallHeight);
-// const dimensions = [width, height];
-// console.log(dimensions);
+const wallHeight = 80;
+function calculate(value){
+  return value*2.54;
+}
+const width = calculate(100);
+const height = calculate(wallHeight);
+const dimensions = [width, height];
+console.log(dimensions);
 
 // Function Expression
 function addValues(num1, num2) {
@@ -55,3 +55,30 @@ const secondValue = addValues(12, 3);
 
 const values = [firstValue, secondValue];
 console.log(values);
+
+// Objects
+const person = {
+  name: 'efty',
+  age: 22,
+  education: true,
+  married: false,
+  siblings: ['Sahara', 'Prianka', 'Esha'],
+  greetings: function () {
+    console.log('Hi i am kosmos');
+  },
+  address() {
+    console.log('Uttara');
+  },
+};
+const age = person.age;
+console.log(age);
+person.name = 'suhan';
+
+console.log(person.name);
+console.log(person.siblings[2]);
+person.greetings();
+
+
+// Conditional Statement
+// >, < , >=, <=, ==, ===, !=, !===
+
