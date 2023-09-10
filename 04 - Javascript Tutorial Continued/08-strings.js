@@ -7,3 +7,15 @@
 5. log result
 6. change the order of arguments
 7. refactor to object parameter */
+
+/* function fullName(firstName, lastName) {
+    const fullName = `${firstName} ${lastName}`;
+    return fullName.toUpperCase();
+};
+console.log(fullName('Sahara', 'Sayed')); */
+
+function fullName({ firstName, lastName }) {
+  const fullName = `${firstName} ${lastName}`;
+  return fullName.toUpperCase();
+}
+console.log(fullName({ lastName: 'Sayed', firstName: 'Sahara' }));
