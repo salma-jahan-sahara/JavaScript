@@ -154,8 +154,9 @@ let number = 5;
 let number2 = 2 + 5;
 // ternary operator
 // condition ? (runs if true) : (runs if false)
+//
 // variable lookup
-const globalNumber = 5;
+/* const globalNumber = 5;
 function add(num1, num2) {
   const globalNumber = 20;
   const result = num1 + num2 + globalNumber;
@@ -168,6 +169,48 @@ function add(num1, num2) {
   multiply();
   return result;
 }
-console.log(add(3, 4));
+console.log(add(3, 4)); */
 
 // call back function
+/* function morning(name) {
+  return `Good morning ${name.toUpperCase()}`;
+}
+function afternoon(name) {
+  return `Good afternoon ${name.repeat(3)}`;
+}
+function greet(name, cb) {
+  const myName = 'Sahara';
+  console.log(`${cb(name)}, my name is ${myName}`);
+}
+greet('rithika', morning);
+greet('suhan', afternoon);
+ */
+
+// array Methods - forEach, map, filter, find, reduce
+// forEach - does not return new array
+const student = [
+  {
+    name: 'bob',
+    age: 20,
+    position: 'developer',
+  },
+  {
+    name: 'peter',
+    age: 20,
+    position: 'developer',
+  },
+  {
+    name: 'suzy',
+    age: 20,
+    position: 'developer',
+  },
+];
+/* function showStudent(sahara) {
+  console.log(sahara);
+}
+// old
+student.forEach(showStudent); */
+// forEach
+student.forEach(function(element){
+  console.log(element.name.toUpperCase());
+})
