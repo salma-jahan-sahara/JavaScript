@@ -67,10 +67,10 @@ const speedrs = [
 ];
 // console.log(speedrs);
 const total = speedrs.reduce(function (acc, currItem) {
-  console.log(`total ${acc}`);
   //  returns number of objects
+  console.log(`total ${acc}`);
   console.log(`current money: ${currItem.salary}`);
   acc += currItem.salary;
   return acc;
   // must return acc
-}, 500);
+},0);

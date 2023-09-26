@@ -22,9 +22,9 @@ const days = [
   'Friday',
 ];
 // current date
-// const date = new Date();
+const date = new Date();
 // manual
-const date = new Date('1/12/2024');
+// const date = new Date('1/12/2024');
 
 const month = date.getMonth();
 console.log(months[month]);
@@ -34,7 +34,7 @@ console.log(days[day]);
 
 console.log(date.getDate());
 console.log(date.getFullYear());
-
+// console.log();
 const sentence = `${days[day]}, ${date.getDate()} ${
   months[month]
 } ${date.getFullYear()}`;
