@@ -106,3 +106,55 @@
     const links = document.querySelectorAll('.first');
     console.log(links);
 */
+/* 
+// className & classList
+
+    const first = document.getElementById('first');
+    const second = document.getElementById('second');
+    const third = document.getElementById('third');
+
+    const classValue = first.className;
+    second.className = 'color text';
+
+    third.classList.add('color');
+    third.classList.add('text');
+    // or
+    third.classList.add('text', 'color');
+    third.classList.remove('color')
+    let result = third.classList.contains('color');
+    if (result) {
+        onsole.log('exist');
+    } else {
+        console.log('no class');
+    }
+
+    const classValue = third.classList;
+    console.log(classValue);
+*/
+
+/* 
+    // createElement , createTextNode, appendChild
+    
+    // createElement('element')
+    // createTextNode('text content)
+    // element.appendChild(childElement)
+
+*/
+
+const result = document.querySelector('#result');
+// create empty element
+const bodyDiv = document.createElement('div');
+// create text node
+const text = document.createTextNode('A simple body div')
+
+bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+
+const heading = document.createElement('h2');
+const headingText = document.createTextNode('Dynamic Heading');
+
+heading.appendChild(headingText);
+heading.classList.add('blue');
+
+result.appendChild(heading);
+console.log(result.children);
