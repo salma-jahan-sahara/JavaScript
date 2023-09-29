@@ -138,23 +138,46 @@
     // createElement('element')
     // createTextNode('text content)
     // element.appendChild(childElement)
-
+    // insertBefore('element','location');
+    // replaceChild('new','old')
+    const result = document.querySelector('#result');
+    // insertBefore
+    const first = document.querySelector('.red');
+    
+    // create empty element
+    const bodyDiv = document.createElement('div');
+    // create text node
+    const text = document.createTextNode('A simple body div')
+    
+    bodyDiv.appendChild(text);
+    // document.body.appendChild(bodyDiv);
+    document.body.insertBefore(bodyDiv, result); // insertBefore
+    const heading = document.createElement('h2');
+    const headingText = document.createTextNode('Dynamic Heading');
+    
+    heading.appendChild(headingText);
+    heading.classList.add('blue');
+    result.insertBefore(heading,first); // insertBefore
+    // result.appendChild(heading);
+    const smallHeading = document.createElement('h6');
+    const smallText = document.createTextNode('I am small heading text');
+    smallHeading.classList.add('red');
+    smallHeading.appendChild(smallText);
+    document.body.replaceChild(smallHeading,bodyDiv);
+    console.log(result.children);
 */
 
+/* 
+    prepend , innerText
+    const heading = document.createElement('h2');
+    heading.innerText = `I am a dynamic heading`
+    document.body.prepend(heading);
+*/
+/* 
+    remove, removeChild
+*/
 const result = document.querySelector('#result');
-// create empty element
-const bodyDiv = document.createElement('div');
-// create text node
-const text = document.createTextNode('A simple body div')
-
-bodyDiv.appendChild(text);
-document.body.appendChild(bodyDiv);
-
-const heading = document.createElement('h2');
-const headingText = document.createTextNode('Dynamic Heading');
-
-heading.appendChild(headingText);
-heading.classList.add('blue');
-
-result.appendChild(heading);
-console.log(result.children);
+// result.remove();
+const heading = result.querySelector('h1');
+result.removeChild(heading);
+console.log(heading);
