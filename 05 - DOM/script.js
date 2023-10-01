@@ -175,9 +175,26 @@
 */
 /* 
     remove, removeChild
+    const result = document.querySelector('#result');
+    // result.remove();
+    const heading = result.querySelector('h1');
+    result.removeChild(heading);
+    console.log(heading);
 */
-const result = document.querySelector('#result');
-// result.remove();
-const heading = result.querySelector('h1');
-result.removeChild(heading);
-console.log(heading);
+/* 
+    // innerHTML, textContent
+*/
+const list = document.getElementById('first');
+const div = document.getElementById('second');
+const item = document.querySelector('.item');
+console.log(div.textContent); // returns only text in the variable
+console.log(list.innerHTML); // returns all the HTML in the variable
+console.log(list.textContent); // returns all the element in the list
+
+const randomVar = 'Sahara';
+const ul = document.createElement('ul');
+ul.innerHTML = `<li class="item">List item</li>
+<li>List item</li> <li>${randomVar}</li>`
+document.body.appendChild(ul);
+
+div.textContent = 'Prianka'
